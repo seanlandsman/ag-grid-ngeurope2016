@@ -36,6 +36,6 @@ Some ideas work experimenting with in the grid are (but you're free to do anythi
 - [Rendering](https://www.ag-grid.com/javascript-grid-cell-rendering)
 - [Styling](https://www.ag-grid.com/javascript-grid-cell-styling)
 
-There is a JSON file included with each skeleton project, but if you'd like to use a larger or smaller file you can use the xxxLarge.json or xxxSmall.json files instead.  All 3 files should yield the same conclusions.
+There is a JSON file included with each skeleton project, but if you'd like to use a larger or smaller file you can use the incidentsWithElevationLarge.json or incidentsWithElevationSmall.json files instead.  All 3 files should yield the same conclusions.
 
 ## **Good luck!**
