@@ -20,6 +20,7 @@
     "app/boot.ts",
     "app/app.module.ts",
     "app/app.component.ts",
-    "app/elevation.component.ts"
+    "app/elevation.component.ts",
+    "app/elevation.service.ts"
   ]
 }

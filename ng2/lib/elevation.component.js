@@ -10,6 +10,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var common_1 = require("@angular/common");
+var main_1 = require('ag-grid-enterprise/main');
+var elevation_service_1 = require('./elevation.service');
+// only import this if you are using the ag-Grid-Enterprise
+require('ag-grid-enterprise/main');
 var CellRendererComponent = (function () {
     function CellRendererComponent() {
     }
@@ -27,13 +31,18 @@ var CellRendererComponent = (function () {
     return CellRendererComponent;
 }());
 var ElevationComponent = (function () {
-    function ElevationComponent() {
+    function ElevationComponent(elevationService) {
+        this.elevationService = elevationService;
+        main_1.LicenseManager.setLicenseKey("Ag-Grid_ag-Grid_Devs_21_November_2016__MTQ3OTY4NjQwMDAwMA==e1c9c3094696b86e3e1e067cd8cbe3e2");
         this.gridOptions = {};
         this.gridOptions.rowData = this.createRowData();
         this.gridOptions.columnDefs = this.createColumnDefs();
     }
     ElevationComponent.prototype.onGridReady = function (event) {
         this.gridOptions.api.sizeColumnsToFit();
+    };
+    ElevationComponent.prototype.ngOnInit = function () {
+        this.elevationService.getElevationData().subscribe(function (data) { return console.log(data); });
     };
     ElevationComponent.prototype.createColumnDefs = function () {
         return [
@@ -62,7 +71,7 @@ var ElevationComponent = (function () {
             selector: 'ag-elevation',
             templateUrl: 'app/elevation.component.html'
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [elevation_service_1.ElevationService])
     ], ElevationComponent);
     return ElevationComponent;
 }());

@@ -3,6 +3,12 @@ import {CommonModule} from "@angular/common"
 
 import {AgRendererComponent} from 'ag-grid-ng2/main';
 import {GridOptions} from 'ag-grid/main';
+import {LicenseManager} from 'ag-grid-enterprise/main';
+
+import {ElevationService} from './elevation.service';
+
+// only import this if you are using the ag-Grid-Enterprise
+import 'ag-grid-enterprise/main';
 
 @Component({
     selector: 'ag-cell',
@@ -25,7 +31,9 @@ class CellRendererComponent implements AgRendererComponent {
 export class ElevationComponent {
     private gridOptions:GridOptions;
 
-    constructor() {
+    constructor(private elevationService:ElevationService) {
+        LicenseManager.setLicenseKey("Ag-Grid_ag-Grid_Devs_21_November_2016__MTQ3OTY4NjQwMDAwMA==e1c9c3094696b86e3e1e067cd8cbe3e2");
+
         this.gridOptions = <GridOptions>{};
         this.gridOptions.rowData = this.createRowData();
         this.gridOptions.columnDefs = this.createColumnDefs();
@@ -34,6 +42,10 @@ export class ElevationComponent {
     private onGridReady(event) {
         this.gridOptions.api.sizeColumnsToFit();
     }
+
+    //ngOnInit() {
+    //    this.elevationService.getElevationData().subscribe(data => console.log(data))
+    //}
 
     private createColumnDefs() {
         return [
