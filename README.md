@@ -26,7 +26,7 @@ Getting Start Documentation for using the above with ag-Grid can be found here:
 
 You're free to use any library you'd like, and come up with anything you like, as long as you use ag-Grid to display/contain the main results.
 
-Some ideas work experimenting with in the grid are:
+Some ideas work experimenting with in the grid are (but you're free to do anything you like!):
 
 - [Sorting](https://www.ag-grid.com/javascript-grid-sorting)
 - [Filtering](https://www.ag-grid.com/javascript-grid-filtering)
@@ -35,5 +35,7 @@ Some ideas work experimenting with in the grid are:
 - [Aggregation](https://www.ag-grid.com/javascript-grid-aggregation)
 - [Rendering](https://www.ag-grid.com/javascript-grid-cell-rendering)
 - [Styling](https://www.ag-grid.com/javascript-grid-cell-styling)
+
+There is a JSON file included with each skeleton project, but if you'd like to use a larger or smaller file you can use the xxxLarge.json or xxxSmall.json files instead.  All 3 files should yield the same conclusions.
 
 ## **Good luck!**
