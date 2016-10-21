@@ -1,6 +1,6 @@
 {
   "name": "ag-grid-ngeurope2016",
-  "version": "6.2.1",
+  "version": "1.0.0",
   "description": "ag-Grid ngEurope 2016 Hackathon",
   "scripts": {
     "lite": "lite-server",
