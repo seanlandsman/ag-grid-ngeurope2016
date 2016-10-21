@@ -31,8 +31,8 @@ Some ideas work experimenting with in the grid are:
 - [Sorting](https://www.ag-grid.com/javascript-grid-sorting)
 - [Filtering](https://www.ag-grid.com/javascript-grid-filtering)
 - [Grouping Rows](https://www.ag-grid.com/javascript-grid-grouping)
-- [Pivoting]|(https://www.ag-grid.com/javascript-grid-pivoting)
-- [Aggregation]|(https://www.ag-grid.com/javascript-grid-aggregation)
+- [Pivoting](https://www.ag-grid.com/javascript-grid-pivoting)
+- [Aggregation](https://www.ag-grid.com/javascript-grid-aggregation)
 - [Rendering](https://www.ag-grid.com/javascript-grid-cell-rendering)
 - [Styling](https://www.ag-grid.com/javascript-grid-cell-styling)
 
