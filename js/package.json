@@ -1,0 +1,26 @@
+{
+  "name": "ag-grid-ngeurope2016",
+  "version": "6.2.1",
+  "description": "ag-Grid ngEurope 2016 Hackathon",
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seanlandsman/ag-grid-ngeurope2016.git"
+  },
+  "author": "Sean Landsman <sean.landsman@ag-grid.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seanlandsman/ag-grid-ngeurope2016/issues"
+  },
+  "homepage": "http://www.ag-grid.com/",
+  "dependencies": {
+    "ag-grid": "6.x",
+    "ag-grid-enterprise": "6.x"
+  },
+  "devDependencies": {
+    "lite-server": "^2.2.0"
+  }
+}

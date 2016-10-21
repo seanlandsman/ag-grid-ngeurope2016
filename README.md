@@ -1,1 +1,1 @@
-# ag-grid-ngeurope2016
+# ag-Grid ngEurope 2016 Hackathon
