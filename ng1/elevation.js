@@ -34,13 +34,8 @@ module.controller("exampleCtrl", function ($scope) {
         }
     };
 
-    function cellClicked(value) {
-        window.alert("Cell clicked: " + value);
-    }
-
     function col2CellRendererFunc(params) {
-        params.$scope.cellClicked = cellClicked;
-        return '<button ng-click="cellClicked(data.col2)" ng-bind="data.col2"></button>';
+        return '<span ng-style="{color:\'orangered\'}" ng-bind="data.col2"></span>';
     }
 
 /*

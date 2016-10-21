@@ -20,6 +20,7 @@ var CellRendererComponent = (function () {
     // called on init
     CellRendererComponent.prototype.agInit = function (params) {
         this.params = params;
+        this.style = params.style;
     };
     CellRendererComponent = __decorate([
         core_1.Component({
@@ -41,9 +42,9 @@ var ElevationComponent = (function () {
     ElevationComponent.prototype.onGridReady = function (event) {
         this.gridOptions.api.sizeColumnsToFit();
     };
-    ElevationComponent.prototype.ngOnInit = function () {
-        this.elevationService.getElevationData().subscribe(function (data) { return console.log(data); });
-    };
+    //ngOnInit() {
+    //    this.elevationService.getElevationData().subscribe(data => console.log(data))
+    //}
     ElevationComponent.prototype.createColumnDefs = function () {
         return [
             { headerName: "Column 1", field: "col1" },

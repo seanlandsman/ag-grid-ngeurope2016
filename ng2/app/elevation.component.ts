@@ -21,6 +21,7 @@ class CellRendererComponent implements AgRendererComponent {
     // called on init
     agInit(params:any):void {
         this.params = params;
+        this.style = params.style;
     }
 }
 
